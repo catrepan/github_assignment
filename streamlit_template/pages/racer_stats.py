@@ -10,11 +10,6 @@ df_racer = pd.read_csv('data/racer_stats.csv')
 
 # st.write(df_racer)
 
-st.write(df_racer.style
-             .highlight_max(color='lightgreen', axis=0, subset=['Speed','Acceleration','Weight'])
-             .highlight_min(color='red', axis=0, subset=['Speed','Acceleration','Weight'])
-)
-
 st.dataframe(df_racer.style
              .highlight_max(color='lightgreen', axis=0, subset=['Speed','Acceleration','Weight'])
              .highlight_min(color='red', axis=0, subset=['Speed','Acceleration','Weight'])

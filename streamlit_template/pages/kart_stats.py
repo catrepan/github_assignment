@@ -10,10 +10,6 @@ df_kart = pd.read_csv('data/kart_stats.csv')
 
 df_kart = df_kart[['Body','Ground Speed','Water Speed','Anti-Gravity Speed','Air Speed']]
 
-st.write(df_kart.style
-         .highlight_max(color='lightgreen', axis=0, subset=['Ground Speed','Water Speed','Anti-Gravity Speed','Air Speed'])
-         .highlight_min(color='red', axis=0, subset=['Ground Speed','Water Speed','Anti-Gravity Speed','Air Speed']))
-
 st.dataframe(df_kart.style
              .highlight_max(color='lightgreen', axis=0, subset=['Ground Speed','Water Speed','Anti-Gravity Speed','Air Speed'])
              .highlight_min(color='red', axis=0, subset=['Ground Speed','Water Speed','Anti-Gravity Speed','Air Speed']))
