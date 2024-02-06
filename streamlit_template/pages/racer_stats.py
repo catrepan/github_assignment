@@ -15,10 +15,10 @@ st.write(df_racer.style
              .highlight_min(color='red', axis=0, subset=['Speed','Acceleration','Weight'])
 )
 
-# st.dataframe(df_racer.style
-#              .highlight_max(color='lightgreen', axis=0, subset=['Speed','Acceleration','Weight'])
-#              .highlight_min(color='red', axis=0, subset=['Speed','Acceleration','Weight'])
-# )
+st.dataframe(df_racer.style
+             .highlight_max(color='lightgreen', axis=0, subset=['Speed','Acceleration','Weight'])
+             .highlight_min(color='red', axis=0, subset=['Speed','Acceleration','Weight'])
+)
 
 st.line_chart(df_racer, x='Speed', y=['Acceleration','Weight','Handling','Traction/Grip','Mini-Turbo'])
 
